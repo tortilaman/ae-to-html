@@ -1,19 +1,45 @@
-
 //Include all generated json files
 var animations = {};
-console.log(locals.iconsArray);
+// var jsonData = {
+//   iconsArray: []
+// };
+// var jsonFile
+// console.log(locals.iconsArray);
+
+//
+//  Create JSON file
+//
+// function populateJSON(r) {
+//   r.keys().forEach(key => {
+//     var title = key.replace("-", " ").replace("./", "").replace(".json", "");
+//     var id = title.replace(" ", "");
+//     var uri = "assets/anim/" + key.replace("./", "");
+//     var obj = [];
+//     obj.push({title: title, id:id, URI: uri, desc: ""});
+//     console.log(JSON.stringify(obj));
+//     jsonData.iconsArray.push(obj);
+//   });
+// }
+//
+// populateJSON(require.context('../anim/', true, /\.json$/));
+//
+// jsonFile = JSON.stringify(jsonData.iconsArray);
+
 
 function importAll(r) {
   r.keys().forEach(key => {
-    var simKey = key.replace("./", "").replace(".json", "");
-    // animations[simKey] = r(JSON.stringify(key));
+    //Files don't have dashes...
+    // var simKey = key.replace("./", "").replace(".json", "");
+    //Files have dashes...
+    var simKey = key.replace("./", "").replace(".json", "").replace(/-/g, "");
+    console.log(simKey);
     animations[simKey] = JSON.parse(r(key));
   });
 }
 
 importAll(require.context('../anim/', true, /\.json$/));
 
-// console.log(animations);
+console.log(animations);
 
 var icons = [];
 //Create Array based on generated html

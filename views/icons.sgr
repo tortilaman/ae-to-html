@@ -1,7 +1,9 @@
 extends(src='layout.sgr')
   block(name='content')
+    // section#banners
+    //   p {{ JSON.stringify(locals) }}
     table#banners
-      each(loop='item of iconArray')
+      each(loop='item of iconsArray')
         tr.banner
           td.bnrContent
             h1.bnrTitle {{ item.title }}

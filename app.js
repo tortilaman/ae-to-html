@@ -3,6 +3,7 @@ const cssStandards = require('spike-css-standards')
 const jsStandards = require('spike-js-standards')
 const Records = require('spike-records')
 
+locals = {}
 module.exports = {
   matchers: { html: '*(**/)*.sgr', css: '*(**/)*.sss' },
   ignore: ['**/layout.sgr', '**/_*', '**/.*', 'readme.md', 'yarn.lock', 'views/templates/*.sgr'],
@@ -16,5 +17,6 @@ module.exports = {
       addDataTo: locals,
       iconsArray: { file: 'assets/js/data.json' }
     })
-  ]
+  ],
+  vendor: 'assets/vendor/**'
 }
