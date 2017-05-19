@@ -1,0 +1,7 @@
+nav
+  .logoType Agile@IBM
+  ul.navRight
+    li.active Practices
+    li Courses
+    li Tools
+    li Logout

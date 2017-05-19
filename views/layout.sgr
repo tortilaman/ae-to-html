@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    block(name='meta')
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible' content='IE=edge')
+      meta(name='description' content='')
+      meta(name='author' content='tortilaman')
+      meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    block(name='title')
+      title Title of Your Site
+
+    block(name='stylesheets')
+      link(rel='stylesheet' href='css/index.css')
+
+  body
+    nav#mainNav
+      block(name="'navigation'")
+        span.logoType Agile@IBM
+        .navRight
+          li: a(class="navLink" href='index.html') Home
+          li: a(class="navLink" href='icons.html') Icons
+    main(role='main' id='{{ pageId }}')
+      block(name='content')
+
+    block(name='javascript')
+      script(src='vendor/bodymovin.min.js')
+      script(src='js/main.js' defer)

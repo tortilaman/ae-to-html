@@ -1,0 +1,13 @@
+extends(src='layout.sgr')
+  block(name='content')
+    section#banners
+      each(loop='item of iconArray')
+        .banner
+          include(src='_partials/_nav.sgr')
+          .bnrContent
+            h1.bnrTitle {{ item.title }}
+          .bnrContent
+            div(class="bm_container" id="{{ 'icon-container-' + item.id }}")
+              div(class="bm_inner_container" id="{{ 'icon-' + item.id }}")
+            .bnrDesc
+              p.bnrDesc {{ item.desc }}

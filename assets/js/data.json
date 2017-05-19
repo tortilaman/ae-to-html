@@ -1,0 +1,62 @@
+{
+	"Backlog Refinement": {
+		"title": "Backlog Refinement",
+		"id": "br",
+		"URI": "assets/anim/br.json",
+		"desc": "Keep the product backlog current by updating, adding, and deleting user stories on a regular basis."
+	},
+	"AB Testing": {
+		"title": "AB Testing",
+		"id": "abtesting",
+		"URI": "assets/anim/abtesting.json",
+		"desc": "A/B testing enbles the customer to help decide the preference between 2 potential design options."
+	},
+	"Acceptance Criteria": {
+		"title": "Acceptance Criteria",
+		"id": "ac",
+		"URI": "assets/anim/ac.json",
+		"desc": "A set of criteria that pertains to one user story for that story to be considered done."
+	},
+	"Continuous Integration": {
+		"title": "Continuous Integration",
+		"id": "continuousintegration",
+		"URI": "assets/anim/ac.json",
+		"desc": ""
+	},
+	"Cross Functional Teams": {
+		"title": "Cross Functional Teams",
+		"id": "crossfunctionalteams",
+		"URI": "assets/anim/crossfunctionalteams.json",
+		"desc": ""
+	},
+	"Empathy mapping": {
+		"title": "Empathy Mapping",
+		"id": "empathymapping",
+		"URI": "assets/anim/empathymapping.json",
+		"desc": ""
+	},
+	"Social Contract": {
+		"title": "Social Contract",
+		"id": "socialcontract",
+		"URI": "assets/anim/socialcontract.json",
+		"desc": ""
+	},
+	"Standups": {
+		"title": "Standups",
+		"id": "standups",
+		"URI": "assets/anim/standups.json",
+		"desc": ""
+	},
+	"Test Automation": {
+		"title": "Test Automation",
+		"id": "testautomation",
+		"URI": "assets/anim/testautomation.json",
+		"desc": ""
+	},
+	"Version Control": {
+		"title": "Version Control",
+		"id": "versioncontrol",
+		"URI": "assets/anim/versioncontrol.json",
+		"desc": ""
+	}
+}

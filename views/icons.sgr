@@ -1,0 +1,10 @@
+extends(src='layout.sgr')
+  block(name='content')
+    table#banners
+      each(loop='item of iconArray')
+        tr.banner
+          td.bnrContent
+            h1.bnrTitle {{ item.title }}
+            button.animBtn(id="{{ 'button-' + item.id }}") Play
+          td(class="bm_container" id="{{ 'icon-container-' + item.id }}")
+            div(class="bm_inner_container" id="{{ 'icon-' + item.id }}")
