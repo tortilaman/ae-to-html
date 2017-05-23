@@ -1,13 +1,12 @@
-//Include all generated json files
 var animations = {};
 // var jsonData = {
 //   iconsArray: []
 // };
 // var jsonFile
 // console.log(locals.iconsArray);
-
 //
-//  Create JSON file
+//
+//  // Create JSON file
 //
 // function populateJSON(r) {
 //   r.keys().forEach(key => {
